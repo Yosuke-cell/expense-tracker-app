@@ -48,3 +48,113 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+
+```md
+---
+
+## Shared Variable Naming Convention
+
+This section defines the shared variable names that both team members should use in this project.  
+Using the same names will help us avoid confusion when working on the input page, main page, and analytics/graph page.
+
+| Variable Name | Meaning |
+|---|---|
+| `transactions` | The full list of transactions |
+| `transaction` | A single transaction |
+| `transactionId` | The unique ID of one transaction |
+| `transactionType` | The transaction type: `'expense'` or `'income'` |
+| `amount` | The amount converted to a number |
+| `amountInput` | The amount value received as a string from `TextInput` |
+| `categoryId` | The category ID |
+| `memo` | A short note or description |
+| `date` | The transaction date, for example: `'2026-05-04'` |
+| `createdAt` | The time when the transaction was created |
+| `updatedAt` | The time when the transaction was last updated |
+
+Example transaction object:
+
+~~~ts
+const transaction = {
+  id: '1714770000000',
+  transactionType: 'expense',
+  amount: 12000,
+  categoryId: 'food',
+  memo: 'Lunch',
+  date: '2026-05-04',
+  createdAt: '2026-05-04T18:30:00.000Z',
+  updatedAt: '2026-05-04T18:30:00.000Z',
+};
+~~~
+
+---
+
+## 共有変数名ルール
+
+このセクションでは、このプロジェクトでチームメンバーが共通で使う変数名を定義します。  
+同じ変数名を使うことで、入力ページ、メインページ、分析・グラフページを作るときの混乱を防ぎます。
+
+| 変数名 | 意味 |
+|---|---|
+| `transactions` | すべての取引リスト |
+| `transaction` | 1件の取引 |
+| `transactionId` | 1件の取引の一意なID |
+| `transactionType` | 取引タイプ：`'expense'` または `'income'` |
+| `amount` | 数値に変換された金額 |
+| `amountInput` | `TextInput` から受け取った文字列の金額 |
+| `categoryId` | カテゴリーID |
+| `memo` | メモ、または短い説明 |
+| `date` | 取引日。例：`'2026-05-04'` |
+| `createdAt` | 取引が作成された日時 |
+| `updatedAt` | 取引が最後に更新された日時 |
+
+取引オブジェクトの例：
+
+~~~ts
+const transaction = {
+  id: '1714770000000',
+  transactionType: 'expense',
+  amount: 12000,
+  categoryId: 'food',
+  memo: 'Lunch',
+  date: '2026-05-04',
+  createdAt: '2026-05-04T18:30:00.000Z',
+  updatedAt: '2026-05-04T18:30:00.000Z',
+};
+~~~
+
+---
+
+## 공통 변수명 규칙
+
+이 섹션은 이 프로젝트에서 팀원들이 공통으로 사용할 변수명을 정의합니다.  
+같은 변수명을 사용하면 입력 페이지, 메인 페이지, 분석/그래프 페이지를 만들 때 혼란을 줄일 수 있습니다.
+
+| 변수명 | 의미 |
+|---|---|
+| `transactions` | 전체 거래 목록 |
+| `transaction` | 거래 하나 |
+| `transactionId` | 거래 하나의 고유 ID |
+| `transactionType` | 거래 타입: `'expense'` 또는 `'income'` |
+| `amount` | 숫자로 변환된 금액 |
+| `amountInput` | `TextInput`에서 받은 문자열 금액 |
+| `categoryId` | 카테고리 ID |
+| `memo` | 메모 또는 간단한 설명 |
+| `date` | 거래 날짜. 예: `'2026-05-04'` |
+| `createdAt` | 거래가 생성된 시간 |
+| `updatedAt` | 거래가 마지막으로 수정된 시간 |
+
+거래 객체 예시:
+
+~~~ts
+const transaction = {
+  id: '1714770000000',
+  transactionType: 'expense',
+  amount: 12000,
+  categoryId: 'food',
+  memo: 'Lunch',
+  date: '2026-05-04',
+  createdAt: '2026-05-04T18:30:00.000Z',
+  updatedAt: '2026-05-04T18:30:00.000Z',
+};
+~~~
